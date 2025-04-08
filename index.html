@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>다운로드 센터</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cookieModal" class="modal">
+    <div class="modal-content">
+      <p>이 사이트는 쿠키를 사용합니다. 동의하시겠습니까?</p>
+      <button onclick="handleCookie(false)">거절</button>
+      <button onclick="handleCookie(true)">모두 수락</button>
+    </div>
+  </div>
+
+  <div id="downloadSection" style="display:none;">
+    <h1>파일 다운로드</h1>
+    <button onclick="openPrivacyModal()">다운로드</button>
+  </div>
+
+  <div id="privacyModal" class="modal">
+    <div class="modal-content">
+      <p>개인정보 제공에 동의하십니까?</p>
+      <button onclick="handlePrivacy(false)">거절</button>
+      <button onclick="handlePrivacy(true)">수락</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
