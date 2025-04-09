@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- 쿠키 팝업 -->
   <div id="cookieModal" class="modal">
     <div class="modal-content">
       <p>이 사이트는 쿠키를 사용합니다. 동의하시겠습니까?</p>
@@ -14,17 +16,29 @@
     </div>
   </div>
 
+  <!-- 다운로드 섹션 -->
   <div id="downloadSection" style="display:none;">
     <h1>파일 다운로드</h1>
     <button onclick="openPrivacyModal()">다운로드</button>
   </div>
 
+  <!-- 개인정보 팝업 -->
   <div id="privacyModal" class="modal">
     <div class="modal-content">
       <p>개인정보 제공에 동의하십니까?</p>
       <button onclick="handlePrivacy(false)">거절</button>
       <button onclick="handlePrivacy(true)">수락</button>
     </div>
+  </div>
+
+  <!-- 주의사항 + 카운트다운 -->
+  <div id="noticeSection" style="display:none;">
+    <h2>주의사항</h2>
+    <p>압축을 풀고 실행해야 버그가 생기지 않습니다.</p>
+    <p><strong>라이센스:</strong> 임선오도.Inc의 허락 없이 배포할 경우 저작권법에 따라 처벌받을 수 있습니다.</p>
+    <p><strong>문의:</strong> limsuno525@naver.com</p>
+    <p><strong>COPYRIGHT © 2013 LIMSUNODO Co., Ltd. ALL RIGHT RESERVED.</strong></p>
+    <p id="countdownText">다운로드까지 10초 남음...</p>
   </div>
 
   <script src="script.js"></script>
